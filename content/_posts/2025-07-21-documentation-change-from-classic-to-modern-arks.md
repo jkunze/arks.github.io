@@ -8,7 +8,7 @@ published: true
 image: "../assets/images/posts/modern_classic_arks.png"
 ---
 
-In late 2025 the ARK Alliance (arks.org) will convert its existing documentation and modify its communication practices to align with the modern form of ARKs, the most visible difference being removal of the slash ('/') at the end of "ark:/".
+In late 2025 the ARK Alliance (arks.org) will convert its existing documentation and modify its communication practices to align with the modern form of ARKs, the most visible difference being removal of the slash ('/') at the end of "ark:/". Two ARKs that differ only in form are equivalent in perpetuity.
 
 <!--more-->
 
