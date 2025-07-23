@@ -13,11 +13,6 @@ In late 2025 the ARK Alliance (arks.org) will convert its existing documentation
 
 <!--more-->
 
-The ARK Alliance surpasses 1400 ARK organizations and reveals a
-promising new ARK minting and resolving tool.
-
-<!--more-->
-
 ![fanciful ark hood ornaments](../../assets/images/posts/modern_classic_arks.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
 Over the month of September 2025 the ARK Alliance (ARKA) will convert its existing documentation and modify its communication practices to align with the modern form of ARKs used in the [ARK technical specification](https://www.ietf.org/archive/id/draft-kunze-ark-41.html) since 2019. The most visible difference, described in a [2022 blog post](https://arks.org/news/2022-03-18-upcoming-changes-to-the-ark-specification/), is the removal of the slash ('/') at the end of "ark:/". Every modern form ARK is, in perpetuity, considered equivalent to the same ARK in classic form. Thus these two ARKs always refer to the same thing:
