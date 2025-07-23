@@ -22,8 +22,9 @@ promising new ARK minting and resolving tool.
 
 Over the month of September 2025 the ARK Alliance (ARKA) will convert its existing documentation and modify its communication practices to align with the modern form of ARKs used in the [ARK technical specification](https://www.ietf.org/archive/id/draft-kunze-ark-41.html) since 2019. The most visible difference, described in a [2022 blog post](https://arks.org/news/2022-03-18-upcoming-changes-to-the-ark-specification/), is the removal of the slash ('/') at the end of "ark:/". Every modern form ARK is, in perpetuity, considered equivalent to the same ARK in classic form. Thus these two ARKs always refer to the same thing:
 
-`   https://digital.library.unt.edu/ark:67531/metadc28359   `     (modern form)<br/>
-`   https://digital.library.unt.edu/ark:/67531/metadc28359  `     (classic form)
+    https://digital.library.unt.edu/ark:67531/metadc28359        (modern form)
+    https://digital.library.unt.edu/ark:/67531/metadc28359       (classic form)
+{: .bg-secondary-subtle }
 
 There’s nothing for ordinary ARK users to do. Since 2019, ARK implementers have been encouraged to accept both forms, and those that do so already will be completely unaffected by the upcoming documentation change. Those that do not yet accept both forms run a small risk, increasing over time, that some of their ARKs will appear to be broken.
 
@@ -35,10 +36,9 @@ ARK implementers are always free, in perpetuity, to store and manage ARKs in any
 
 There is no single recipe, but for some common resolver implementations, a one-line change might be enough to make a server support both forms. In a technical glimpse of a simplified, hypothetical Apache server example, adding the question mark to this configuration line turns a server of classic ARKs into a server that accepts both forms:
 
-```
-RewriteRule   ark:/?12345/(.*)   "/collection/$1"
-#                  ^ this '?' accepts both ark:/ and ark:
-```
+    RewriteRule   ark:/?12345/(.*)   "/collection/$1"
+    #                  ^ this '?' accepts both ark:/ and ark:
+{: .bg-secondary-subtle }
 
 On a technical level, tools that support classic ARKs should be changed as follows in order to support modern ARKs:
 
