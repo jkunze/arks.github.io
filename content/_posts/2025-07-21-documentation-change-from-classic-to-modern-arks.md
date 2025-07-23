@@ -3,12 +3,18 @@ title: "ARK documentation changing to show modern ARKs (ark:) by default instead
 redirect_from: /blog/2025-07-28-documentation-change-from-classic-to-modern-arks/
 pid: 553
 authors:
-date: 2025-07-28
+  - ark-alliance
+date: 2025-07-21
 published: true
 image: "../assets/images/posts/modern_classic_arks.png"
 ---
 
 In late 2025 the ARK Alliance (arks.org) will convert its existing documentation and modify its communication practices to align with the modern form of ARKs, the most visible difference being removal of the slash ('/') at the end of "ark:/". Two ARKs that differ only in form are equivalent in perpetuity.
+
+<!--more-->
+
+The ARK Alliance surpasses 1400 ARK organizations and reveals a
+promising new ARK minting and resolving tool.
 
 <!--more-->
 
