@@ -15,10 +15,13 @@ In late 2025 the ARK Alliance (arks.org) will convert its existing documentation
 
 ![fanciful ark hood ornaments](../../assets/images/posts/modern_classic_arks.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
-Over the month of September 2025 the ARK Alliance (ARKA) will convert its existing documentation and modify its communication practices to align with the modern form of ARKs used in the [ARK technical specification](https://www.ietf.org/archive/id/draft-kunze-ark-41.html) since 2019. The most visible difference, described in a [2022 blog post](https://arks.org/news/2022-03-18-upcoming-changes-to-the-ark-specification/), is the removal of the slash ('/') at the end of "ark:/". Every modern form ARK is, in perpetuity, considered equivalent to the same ARK in classic form. Thus these two ARKs always refer to the same thing:
+kjsdkjsf
 
-    https://digital.library.unt.edu/ark:67531/metadc28359        (modern form)
-    https://digital.library.unt.edu/ark:/67531/metadc28359       (classic form)
+
+| ![fanciful ark hood ornaments](../../assets/images/posts/modern_classic_arks.png){: .img-thumbnail .img-fluid .d-block fetchpriority="high" loading="eager"} | Over the month of September 2025 the ARK Alliance (ARKA) will convert its existing documentation and modify its communication practices to align with the modern form of ARKs used in the [ARK technical specification](https://www.ietf.org/archive/id/draft-kunze-ark-41.html) since 2019. The most visible difference, described in a [2022 blog post](https://arks.org/news/2022-03-18-upcoming-changes-to-the-ark-specification/), is the removal of the slash ('/') at the end of "ark:/". Every modern form ARK is, in perpetuity, considered equivalent to the same ARK in classic form. Thus these two ARKs always refer to the same thing: |
+
+    https://digital.library.unt.edu/ark:67531/metadc28359     # modern form
+    https://digital.library.unt.edu/ark:/67531/metadc28359    # classic form
 {: .bg-secondary-subtle }
 
 There’s nothing for ordinary ARK users to do. Since 2019, ARK implementers have been encouraged to accept both forms, and those that do so already will be completely unaffected by the upcoming documentation change. Those that do not yet accept both forms run a small risk, increasing over time, that some of their ARKs will appear to be broken.
