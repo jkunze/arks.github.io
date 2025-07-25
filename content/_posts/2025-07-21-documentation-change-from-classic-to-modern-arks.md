@@ -1,10 +1,10 @@
 ---
 title: "ARK documentation changing to show modern ARKs (ark:) by default instead of classic ARKs (ark:/)"
-redirect_from: /blog/2025-07-28-documentation-change-from-classic-to-modern-arks/
+redirect_from: /blog/2025-07-29-documentation-change-from-classic-to-modern-arks/
 pid: 553
 authors:
   - ark-alliance
-date: 2025-07-21
+date: 2025-07-25
 published: true
 image: "../assets/images/posts/modern_classic_arks.png"
 ---
