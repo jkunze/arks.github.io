@@ -9,19 +9,37 @@
   font-family: 'Poly', serif;
 }
 
-// branding BEM (Block Element Modifier) https://css-tricks.com/bem-101/
+// branding BEM (Block Element Modifier)
 .ark-alliance {
+
+  &__site-header {
+    background-color: #000;
+  }
 
   &__title,
   &__content,
   &__footer {
     font-family: 'Poly', serif;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__tagline,
+  &__navbar {
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  &__tagline {
+    color: #b3b3b3;
+  }
+
+  &__content,
+  &__footer {
     color: var(--bs-body-color);
   }
-  &__tagline
-  &__navbar {
-   font-family: 'Work Sans', sans-serif;
-  }
+
   &__content {
     font-size: 1.4rem;
 
@@ -29,12 +47,10 @@
       margin-bottom: .75rem;
     }
 
-    // create "list-N-columns" classes.
     @for $i from 2 through 4 {
       @include list-columns($i);
     }
 
-    // don't let naked URLs break layouts.
     a[href^="http"] {
       word-break: break-word;
     }
@@ -42,17 +58,30 @@
 
   .post-image {
     height: 200px;
-    width: auto;   /* Maintain aspect ratio */
-    object-fit: cover; /* Optionally cover container w.o. stretching */
+    width: auto;
+    object-fit: cover;
   }
 
   .text-brand {
     color: #b8860b;
   }
+
+  &__logo {
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+  }
+
+  &__site-header a {
+    color: inherit;
+  }
+
+  &__site-header .ark-alliance__logo {
+    color: #b8860b;
+  }
 }
 
 .icon {
-  width:  1.6rem;
+  width: 1.6rem;
   height: 1.6rem;
   display: inline-block;
   vertical-align: -0.125em;
@@ -60,7 +89,7 @@
 }
 
 .icon-lg {
-  width:  6.1rem;
+  width: 6.1rem;
   height: 6rem;
   fill: currentColor;
 }
