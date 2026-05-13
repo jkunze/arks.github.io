@@ -69,12 +69,14 @@ To get your software listed please [let us know] about it.
     Public Knowledge Project (similar to its DOI plug-in) that works with
     versions 3.1.X, 3.2.X, and 3.3.X, and with locales for the Spanish and
     English (more languages coming). Installation and configuration in English
-    ([ARK Plugin Guide for OJS]) and Español ([Guia del Plugin ARK para OJS]).
--   [ArkAndNoid][] [“Omeka Classic”][ArkAndNoid]: module to create and manage
+    ([ARK Plugin Guide for OJS (PDF)](https://github.com/yasielpv/pkp-ark-pubid/files/8398101/ARK.plugin.guide.for.OJS.pdf))
+    and Español
+    ([Guia del Plugin ARK para OJS (PDF)](https://github.com/yasielpv/pkp-ark-pubid/files/8398100/Guia.del.plugin.ARK.para.OJS.pdf)).
+-   [ArkAndNoid][] “Omeka Classic”: module to create and manage
     ARKs for the Omeka Classic open source web-publishing platform
--   [ArkAndNoid][2] [“Omeka S”][2]: module to create and manage ARKs for the
+-   [ArkAndNoid][2] “Omeka S”: module to create and manage ARKs for the
     Omeka S open source web-publishing platform
--   [Archival][] [Resource Key Identifier Name Mapping][Archival]: module for
+-   [Archival Resource Key Identifier Name Mapping][Archival]: module for
     Drupal which allows your Drupal site to act as a Name Mapping Authority
 -   [EZID UI codebase][]: Provides a user interface to minting and resolving
     that enables you to become an ARK service provider (requires significant
@@ -94,9 +96,9 @@ To get your software listed please [let us know] about it.
 ## Selected presentations
 
 -   _Getting Started with ARK Persistent Identifiers (PIDs)_, 2024-03-31, recommended ARK (Archival Resource Key) tutorial for beginners. [video][17] (30 mins)
--   Brief Introduction to ARKs for GLAMs, 2023-08-03. [slides] (15 mins)
+-   Brief Introduction to ARKs for GLAMs, 2023-08-03. [slides] (PDF, 15 mins)
 -   ARK Training, 2023-06-06, 3-hour tutorial from 2023 IIIF Annual
-    Conference. [slides][3]
+    Conference. [slides][3] (PDF)
 -   ARK Alliance Update and Three Use Cases, 2023-01-18, presentation. [video]
     (28 mins)
     -   [Introduction]
@@ -120,16 +122,16 @@ To get your software listed please [let us know] about it.
     (62 mins) \| [slides][10]
 -   *Integrating ArchivesSpace and ARKs*, 2020-03-04, John Kunze, Seth Shaw,
     Christine di Bella. [abstract][11] \| [video][12] (60 mins) \|
-    [slides][13]
+    [slides][13] (PDF)
 -   *ARKs in the Open: community owned identifier infrastructure*, 2020-01-24,
-    John Kunze. [slides][14]
+    John Kunze. [slides][14] (PDF)
 -   *ARK Identifier Summit, National Library of France*, 2018-03-21, Sébastien
     Peyrard, John Kunze, Bertrand Caron, Nicolas Thouvenin, Roxana
     Maurer-Popistașu, Bruno Revellin, Delphine Jamet, Franck Bernardet, Adrien
     di Mascio, Guillaume Lory, Alexis Moisdon, Emmanuelle Bermès.
     [abstract][15] \| [collected videos] (5 hours, in French 🇫🇷)
 -   *Keynote address at ARK Identifier Summit*, 2018-03-21, John Kunze. [video
-    link] (45 mins, in French 🇫🇷) \| [English transcription]
+    link] (45 mins, in French 🇫🇷) \| [English transcription] (PDF)
 -   *Using Archival Resource Keys (ARKs) for Persistent Identification*,
     2008-06-05, Mark Phillips. [slides][16]
 {: .list-2-columns }
@@ -157,8 +159,6 @@ To get your software listed please [let us know] about it.
 [PHP Noid]: https://github.com/Daniel-KM/Noid4Php/blob/master/noid
 [OJS Plug-in]: https://github.com/yasielpv/pkp-ark-pubid
 [Open Journal System (OJS)]: https://pkp.sfu.ca/ojs/
-[ARK Plugin Guide for OJS]: https://github.com/yasielpv/pkp-ark-pubid/files/8398101/ARK.plugin.guide.for.OJS.pdf
-[Guia del Plugin ARK para OJS]: https://github.com/yasielpv/pkp-ark-pubid/files/8398100/Guia.del.plugin.ARK.para.OJS.pdf
 [ArkAndNoid]: https://github.com/Daniel-KM/ArkAndNoid4Omeka
 [2]: https://github.com/Daniel-KM/Omeka-S-module-Ark
 [Archival]: https://www.drupal.org/project/ark/

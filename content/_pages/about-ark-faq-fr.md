@@ -113,7 +113,7 @@ Difficile à dire car les ARK sont décentralisés, mais plus de 600 organisatio
 * les collections d’Internet Archive)  
 * les profils de chercheurs ORCID
 
-Voici la répartition globale des [organisations enregistrées comme attributrices d’ARK]({{ site.list_ark_orgs }}).
+Voici la répartition globale des organisations enregistrées comme attributrices d’ARK.
 
 {% capture map_caption %}
   La répartition globale des organisations enregistrées comme attributrices d’ARK. Cliquez sur l’image pour accéder à une carte à jour et zoomable.
@@ -172,6 +172,7 @@ Les chaînes de caractères d'identifiants pérennes sont généralement **opaqu
 #### Exemples de chaînes de caractères plus ou moins opaques
 
 <div class="table-responsive" markdown="1">
+| *Niveau d'opacité* | *Chaîne longue* | *Chaîne moyenne* | *Courte* |
 |----|----|----|
 | **non-opaque** | Netscape Permanent Archive | Gay\_Divorcee\_1934\_April\_1 | Name-to-Thing Resolver |
 | **opaque-ish** | x0001, x0002, ..., x9998 | GD/1934/04/01 | n2t.net |
@@ -198,9 +199,9 @@ On préférera la forme URL (https ou http) de l’ARK. Par exemple : [https://n
 
     <a href="https://n2t.net/ark:99166/w66d60p2">ark:99166/w66d60p2</a>
 
-Une décision importante consiste à déterminer si vos URI ARK utiliseront le nom d’hôte de votre résolveur local ou le résolveur [N2T.net](http://n2t.net/). Si vous privilégiez le contrôle ou la stratégie de marque, vous préférerez publier des ARK utilisant votre résolveur local. Si vous doutez de la stabilité de votre nom d’hôte local, vous préférerez publier vos ARK en utilisant le nom d’hôte [n2t.net](http://n2t.net/) (voir [ici](#creating) des exemples des deux approches).
+Une décision importante consiste à déterminer si vos URI ARK utiliseront le nom d’hôte de votre résolveur local ou le résolveur [N2T.net](http://n2t.net/). Si vous privilégiez le contrôle ou la stratégie de marque, vous préférerez publier des ARK utilisant votre résolveur local. Si vous doutez de la stabilité de votre nom d’hôte local, vous préférerez publier vos ARK en utilisant le nom d’hôte n2t.net (voir [ici](#creating) des exemples des deux approches).
 
-Quelle que soit la manière dont vous les publiez, la résolution de vos ARK via [N2T](https://n2t.net) est toujours possible.
+Quelle que soit la manière dont vous les publiez, la résolution de vos ARK via N2T est toujours possible.
 
 ### Existe-t-il des outils et des services de gestion d’ARK ? {#tools}
 
@@ -260,11 +261,11 @@ Avoir à gérer et à maintenir son propre résolveur est la contrepartie d’un
 
 ### Mon organisation a son propre résolveur ARK \- dois-je me soucier de [N2T.net](http://n2t.net/) ?
 
-Oui, et ce pour deux raisons principales. Tout d'abord, si vos ARK « à l'état sauvage » apparaissent sans votre le nom d'hôte de votre résolveur (c'est-à-dire, s'ils commencent par « ark: ... », ce qui n'est pas rare), la personne qui veut les utiliser n'est pas tenue de connaître le nom d'hôte : il lui suffit d'ajouter « [n2t.net](http://n2t.net/) » devant eux. Cela fonctionne car N2T connaît le nom d'hôte du résolveur.
+Oui, et ce pour deux raisons principales. Tout d'abord, si vos ARK « à l'état sauvage » apparaissent sans votre le nom d'hôte de votre résolveur (c'est-à-dire, s'ils commencent par « ark: ... », ce qui n'est pas rare), la personne qui veut les utiliser n'est pas tenue de connaître le nom d'hôte : il lui suffit d'ajouter « n2t.net » devant eux. Cela fonctionne car N2T connaît le nom d'hôte du résolveur.
 
-Deuxièmement, si certaines organisations et leurs noms d'hôtes résolveurs ont une longue durée de vie, la plupart ne durent pas. Une personne essayant d'utiliser un ARK contenant un nom d'hôte de résolveur non fonctionnel peut remplacer la partie non fonctionnelle par « [n2t.net](http://n2t.net/) ». Si les circonstances vous obligent à changer votre résolveur, cette étape de remplacement donne aux ARK que vous avez publiés avant le changement une meilleure chance de fonctionner.
+Deuxièmement, si certaines organisations et leurs noms d'hôtes résolveurs ont une longue durée de vie, la plupart ne durent pas. Une personne essayant d'utiliser un ARK contenant un nom d'hôte de résolveur non fonctionnel peut remplacer la partie non fonctionnelle par « n2t.net ». Si les circonstances vous obligent à changer votre résolveur, cette étape de remplacement donne aux ARK que vous avez publiés avant le changement une meilleure chance de fonctionner.
 
-Pour éviter de futurs désagréments, certaines organisations qui gèrent leurs propres résolveurs peuvent choisir d'emblée de préférer au nom de leur résolveur le nom de domaine [n2t.net](http://n2t.net/) pour la publication de leurs ARK.
+Pour éviter de futurs désagréments, certaines organisations qui gèrent leurs propres résolveurs peuvent choisir d'emblée de préférer au nom de leur résolveur le nom de domaine n2t.net pour la publication de leurs ARK.
 
 ### Pourquoi le résolveur ARK global ([n2t.net](http://n2t.net/)) ne contient-il pas le mot « ARK » ?
 
@@ -330,8 +331,8 @@ Tous les NAAN doivent être enregistrés auprès de N2T et répertoriés dans le
 Ils fonctionnent de la même manière que tous les autres espaces de noms. Étant donné un préfixe associé à un espace de noms, ce préfixe peut être « étendu » (en ajoutant des caractères à sa fin) pour créer un nouveau sous-espace de noms (directement en dessous) associé au préfixe étendu. Si les préfixes étendus n'entrent pas en conflit, les noms des espaces de noms associés ne le seront pas non plus. Un espace de noms peut être associé à n'importe quel préfixe, chacun pouvant comporter un nombre potentiellement infini de noms (ARK) commençant par lui.
 
 <div class="table-responsive" markdown="1">
+| *Ensemble de tous les<br>ARK commençant par* | *Espace de noms associé* | *Exemple d'ARK dans<br>cet espace de noms* |
 |-----|-----|-----|
-| Ensemble de tous les<br>ARK commençant par | Espace de noms associé | Exemple d'ARK dans<br>cet espace de noms |
 | ark: | Tous les ARK | ark:99999/fk4gt2m |
 | ark:12345/ | ARK sous le NAAN 12345 | ark:12345/p987654 |
 | ark:12345/x5 | ARK sous le 12345/x5 _shoulder_ | ark:12345/x5wf6789 |
@@ -385,8 +386,8 @@ Oui, car il existe quatre NAAN partagés avec une sémantique particulière dont
 Les NAAN partagés n'appartiennent à aucune organisation. Créer des ARK sans conflit sous un NAAN partagé nécessite, comme vous pouvez l'imaginer, de réserver un shoulder, ce qui nécessite de remplir un formulaire en ligne pour demander un shoulder sous un NAAN partagé (veuillez ne pas utiliser ce formulaire pour les shoulders sous votre propre NAAN non partagé).
 
 <div class="table-responsive" markdown="1">
+| *NAAN partagé <br>signification* | *Objectif, signification ou connotation des ARK avec ce NAAN. <br>(Il est acceptable que ces NAAN soient non opaques, car leur signification est immuable.)* | *Prévision de résolution ?* | *Référence à long terme ?* |
 | --- | --- | --- | --- |
-| **NAAN partagé <br>_signification_** | **Objectif, signification ou connotation des ARK avec ce NAAN. <br>(Il est acceptable que ces NAAN soient _non opaques_, car leur signification est immuable.)** | **Prévision de résolution ?** | **Référence à long terme ?** |
 | **12345** _exemples_ | Exemples d'ARK apparaissant dans la documentation. Ils pourraient être résolus, mais aucun vérificateur de liens n'a à s'inquiéter s'ils ne le sont pas. Ils ne devraient pas être considérés comme viables pour une référence à long terme. | peut-être | non |
 | **99152** _termes_ | ARK pour les termes de vocabulaire contrôlé et d'ontologie, tels que les noms d'éléments de métadonnées et les valeurs de liste de sélection. Ils devraient être résolus en définitions de termes et conviennent à une référence à long terme. | oui | oui |
 | **99166** _agents_ | ARK pour les personnes, les groupes et les institutions en tant qu'« agents » (acteurs, tels que les créateurs, les contributeurs, les éditeurs, les interprètes, etc.). Elles doivent correspondre aux définitions d'agent et conviennent à une référence à long terme. | oui | oui |
@@ -412,7 +413,7 @@ Vous pouvez demander une modification de l'entrée de registre d'un NAAN relatif
 
 ### Pourquoi utiliser des ARK plutôt que des DOI, par exemple ?
 
-* Pour réduire les coûts (voir [cette section](#diffs) pour plus de précision) ;  
+* Pour réduire les coûts (voir [cette section](#pid-differences) pour plus de précision) ;  
 * Pour ne gérer que les métadonnées que vous voulez ;  
 * Pour pouvoir créer des identifiants sans métadonnées ;  
 * Pour pouvoir créer un identifiant avant même que votre objet n’existe ;  
@@ -444,8 +445,9 @@ Voici les principaux types (ou schémas) d'identifiants persistants.
 Ils ont également une structure très similaire, comme le montrent les exemples ci-dessous, composée de quatre parties :
 
 <div class="table-responsive" markdown="1">
-| --- | --- | --- |
-| `https://n2t.net/ark:99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | | 1. le protocole (`https://`) plus un nom d'hôte,<br>2. juste pour ARK et URN, il y a aussi une étiquette ("ark:" ou "urn:"),<br>3. l'autorité d'attribution du nom (`99999`, `10.99999` ou `99999`), qui est l'organisation ou le groupe qui a créé un identifiant particulier,<br>4. et enfin, le _nom_, ou identifiant local, qu'il a attribué (`12345`). |
+| *Les types de PID présentent une structure très similaire* | *Décomposition structurelle des PID* |
+| --- | --- |
+| `https://n2t.net/ark:99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | 1. le protocole (`https://`) plus un nom d'hôte,<br>2. juste pour ARK et URN, il y a aussi une étiquette ("ark:" ou "urn:"),<br>3. l'autorité d'attribution du nom (`99999`, `10.99999` ou `99999`), qui est l'organisation ou le groupe qui a créé un identifiant particulier,<br>4. et enfin, le _nom_, ou identifiant local, qu'il a attribué (`12345`). |
 {: .table .table-striped .table-hover }
 </div>
 
@@ -464,7 +466,7 @@ Non, ce serait une affirmation excessive. Mais remettons ces formats d’identif
 
 Étant donné le peu de choses que ces formats font pour vous, lorsque vous en choisissez un, vous prendrez probablement en compte des facteurs tels que le coût, le risque et l'ouverture. 
 
-### En quoi les ARK diffèrent-ils des identifiants tels que les DOI, les Handle, les PURL et les URN ? {#diffs}
+### En quoi les ARK diffèrent-ils des identifiants tels que les DOI, les Handle, les PURL et les URN ? {#pid-differences}
 
 #### **La réponse courte**
 
@@ -583,7 +585,7 @@ Une interopérabilité fiable entre domaines peut s'avérer difficile, mais [Dub
 * quand il a été « dit » (similaire à l’élément DC Date, mais inclut les intervalles de dates, les dates approximative et celles avant l’ère chrétienne),  
 * où le « dit » peut être trouvé (similaire à l’élément DC Identifiant, mais généralement inutile car il s'agit de l'ARK lui-même).
 
-Il y a beaucoup à dire sur les métadonnées et ARK (par exemple, sur l’application des éléments « qui », « quoi », « quand » et « où » au contenu d'une biographie, ou comment une institution de conservation prévoit de maintenir un jeu de données). Des [recommandations supplémentaires](https://www.dublincore.org/groups/kernel/spec/) sur les métadonnées et ARK seront disponibles sur [arks.org](http://arks.org/). D'autres éléments sont essentiels, tels que
+Il y a beaucoup à dire sur les métadonnées et ARK (par exemple, sur l’application des éléments « qui », « quoi », « quand » et « où » au contenu d'une biographie, ou comment une institution de conservation prévoit de maintenir un jeu de données). Des recommandations supplémentaires sur les métadonnées et ARK seront disponibles sur [arks.org](http://arks.org/). D'autres éléments sont essentiels, tels que
 
 * comment il a été « dit » (similaire à un élément ResourceType), ce qui peut déterminer des alignements avec des spécifications de métadonnées externes et des éléments supplémentaires  
 * URL cible de la redirection, généralement stockée en tant qu'élément distinct des métadonnées  

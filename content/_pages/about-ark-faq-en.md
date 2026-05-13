@@ -118,7 +118,7 @@ That's a little hard to say because ARKs are very decentralized, but more than 6
 *   Internet Archive collections,
 *   ORCID researcher profiles, etc.
 
-Below is the global distribution of [organizations registered to create ARKs]({{ site.list_ark_orgs }}).
+Below is the global distribution of organizations registered to create ARKs.
 
 {% capture map_caption %}
   Global distribution of over {{ site.num_ark_orgs }} ARK organizations. Clicking on this static image should take you to an up-to-date, zoomable map.
@@ -183,7 +183,8 @@ Persistent identifier strings are typically opaque, deliberately revealing litt
 #### Examples of character strings of varying opacity
 
 <div class="table-responsive" markdown="1">
-|----|----|----|
+| *Opacity level* | *Longer string* | *Medium string* | *Short* |
+|----|----|----|----|
 | **non-opaque** | Netscape Permanent Archive | Gay\_Divorcee\_1934\_April\_1 | Name-to-Thing Resolver |
 | **opaque-ish** | x0001, x0002, ..., x9998 | GD/1934/04/01 | n2t.net |
 | **opaquer** | 141e86dc-d396-4e59-bbc2-4c3bf5326152 | 19340401 | n2t |
@@ -348,8 +349,8 @@ They work much the same way that all namespaces work. Given a prefix associated 
 
 
 <div class="table-responsive" markdown="1">
+| *Set of all ARKs starting* | *Associated namespace* | *Example ARK in that namespace* |
 |-----|-----|-----|
-| Set of all ARKs starting | Associated namespace | Example ARK in that namespace |
 | ark: | All ARKs | ark:99999/fk4gt2m |
 | ark:12345/ | ARKs under the NAAN 12345 | ark:12345/p987654 |
 | ark:12345/x5 | ARKs under the 12345/x5 _shoulder_ | ark:12345/x5wf6789 |
@@ -402,8 +403,8 @@ Yes, because there are four shared NAANs with special semantics that you might 
 Shared NAANs are not owned by any one organization. In order to create ARKs without conflict under a shared NAAN requires, as you might imagine, reserving a shoulder, and that requires filling out an [online form to request a shoulder under a shared NAAN]({{ site.shoulder_form_url }}) (please don't use this for shoulders under your own, non-shared NAAN).
 
 <div class="table-responsive" markdown="1">
+| *Shared NAAN  <br>meaning* | *Purpose, meaning, or connotation of ARKs with this NAAN.  <br>  <br>(It's ok for these NAANs to be non-opaque since their meanings are immutable.)* | *Expect to resolve?* | *OK for long term reference?* |
 | --- | --- | --- | --- |
-| **Shared NAAN  <br>_meaning_** | **Purpose, meaning, or connotation of ARKs with this NAAN.  <br>  <br>(It's ok for these NAANs to be _non-opaque_ since their meanings are immutable.)** | **Expect to resolve?** | **OK for long term reference?** |
 | **12345** _examples_ | Example ARKs appearing in documentation. They might resolve, but no link checker need be concerned if they don't. They should not be considered viable for long term reference. | maybe | no  |
 | **99152** _terms_ | ARKs for controlled vocabulary and ontology terms, such as metadata element names and pick-list values. They should resolve to term definitions and are suitable for long term reference. | yes | yes |
 | **99166** _agents_ | ARKs for people, groups, and institutions as "agents" (actors, such as creators, contributors, publishers, performers, etc). They should resolve to agent definitions and are suitable for long term reference. | yes | yes |
@@ -431,7 +432,7 @@ NAANs are portable. If your organization transitions into or out of a vendor rel
 
 ### Why would I use ARKs compared to, for example, DOIs?
 
-*   To keep costs down ([details](#diffs)).
+*   To keep costs down ([details](#pid-differences)).
 *   To work with exactly the metadata you want.
 *   To be able to create identifiers without metadata.
 *   To be able to create an identifier even before your object exists.
@@ -463,8 +464,9 @@ These are the major persistent identifier types (or schemes).
 They also have very similar structure, as seen in the examples below, consisting of four parts:
 
 <div class="table-responsive" markdown="1">
-| --- | --- | --- |
-| `https://n2t.net/ark:99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | | 1.  the protocol (`https://`) plus a hostname,<br>2.  just for ARK and URN, there's also a label ("ark:" or "urn:"),<br>3.  the name assigning authority (`99999`, `10.99999`, or `99999`), which is the organization or group that created a particular identifier,<br>4.  and finally, the _name_, or local identifier, that it assigned (`12345`). |
+| *PID types show very similar structure* | *PID structural breakdown* |
+| --- | --- |
+| `https://n2t.net/ark:99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | 1.  the protocol (`https://`) plus a hostname,<br>2.  just for ARK and URN, there's also a label ("ark:" or "urn:"),<br>3.  the name assigning authority (`99999`, `10.99999`, or `99999`), which is the organization or group that created a particular identifier,<br>4.  and finally, the _name_, or local identifier, that it assigned (`12345`). |
 {: .table .table-striped .table-hover }
 </div>
 
@@ -482,7 +484,7 @@ No, that's too strong a statement. But let's keep these identifier schemes (type
 
 Given how little the schemes do for you, when choosing one you'll likely want to consider factors such as cost, risk, and openness.
 
-### How do ARKs differ from identifiers like DOIs, Handles, PURLs, and URNs? {#diffs}
+### How do ARKs differ from identifiers like DOIs, Handles, PURLs, and URNs? {#pid-differences}
 
 #### **The short answer**
 
@@ -603,7 +605,7 @@ Kernel metadata is structured as if in answer to the questions, who, what, whe
 *   _when_ it was "told" (similar DC Date, but includes date ranges, approximate and BCE dates),
 *   _where_ the "telling" can be found (from DC Identifier, but usually not needed because this is the ARK itself)
 
-There's much more to say about ARK metadata, for example, applying who, what, when, and where to the content of a biography, or how an archive plans to support a dataset. More [ARK metadata guidelines](http://dublincore.org/groups/kernel/spec/) will be made available at arks.org. Other elements are key, such as 
+There's much more to say about ARK metadata, for example, applying who, what, when, and where to the content of a biography, or how an archive plans to support a dataset. More ARK metadata guidelines will be made available at arks.org. Other elements are key, such as 
 
 *   _how_ it was "told" (similar to ResourceType), which may dictate mappings to external metadata specs and additional elements
 *   redirection target URL, which is usually stored as a distinguished element of metadata

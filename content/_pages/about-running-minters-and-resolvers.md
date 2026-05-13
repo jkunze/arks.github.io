@@ -84,7 +84,7 @@ information and strings containing letters can unintentionally spell words
 (which is why vowels are missing from the recommended character repertoire).
 
 <div class="table-responsive" markdown="1">
-|                |                                      |                           |                        |
+| *Opacity level* | *Longer string* | *Medium string* | *Short* |
 |----------------|--------------------------------------|---------------------------|------------------------|
 | **non-opaque** | Netscape Permanent Archive           | Gay_Divorcee_1934_April_1 | Name-to-Thing Resolver |
 | **opaque-ish** | x0001, x0002, …, x9998               | GD/1934/04/01             | n2t.net                |

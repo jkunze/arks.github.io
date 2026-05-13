@@ -116,7 +116,7 @@ an identifier fee to create them. Of course *maintaining* them isn’t free. It
 is never without cost to keep content access persistent in the long term,
 regardless of identifier type.
 
-#### More differences between ARKs, DOIs, Handles, PURLs, and URNs
+### More differences between ARKs, DOIs, Handles, PURLs, and URNs
 
 -   Landing pages: Crossref and DataCite DOIs link to publisher landing pages
     constructed around but *not directly to* objects you care about, but ARKs

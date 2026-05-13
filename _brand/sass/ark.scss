@@ -1,24 +1,26 @@
 @import "utils";
 
 :root {
-  --arka-color-text: #424242;
+  --bs-code-color: #000000;
+
   --arka-color-link: #1345f8;
+  --arka-color-text: #424242;
   --arka-color-gold: #976e07;
 
   --arka-bg-warm: #f9f4e7;
   --arka-bg-cool: #ffffff;
   --arka-bg-dark: #000000;
-  --arka-bg-grey: #E2E2E2;
+  --arka-bg-grey: #e2e2e2;
   --arka-bg-ascii-art: #e3f5ff;
 
   --arka-callout-bg: #e3f5ff;
   --arka-callout-border: #063e5d;
+  --arka-caption-color: #5f5a50;
 
   --arka-highlight-bg: #424242;
   --arka-highlight-text: #ffffff;
   --arka-highlight-link: #fcd36f;
 
-  --arka-caption-color: #5f5a50;
   --arka-tagline-color: #b3b3b3;
   --arka-header-text: #ffffff;
 
@@ -115,6 +117,7 @@
 
   &__navbar .nav-link {
     font-weight: 500;
+    color: var(--arka-color-text);
   }
 
   &__navbar .nav-link.active {
@@ -143,7 +146,6 @@
     color: var(--arka-color-text);
   }
 
-  /* links */
   &__breadcrumbs a {
     color: var(--arka-color-link);
     text-decoration: none;

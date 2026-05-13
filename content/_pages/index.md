@@ -32,7 +32,7 @@ physical, or abstract.
 
 {% include content/fig.html
   url="/assets/images/pages/index/ark_things.png"
-  description="Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch."
+  description="Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch. "
 %}
 
 {% include content/section.html do="changeto" color="cool" label="ARKs compared to DOIs, URNs, and Handles" %}

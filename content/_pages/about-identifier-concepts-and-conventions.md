@@ -254,7 +254,7 @@ extensions. For example, in the identifier,
 
 the protected string, “13030/tqb3kh8w”, ends with a “w” that is
 (hypothetically) the computed NCDA check character. Also, all NCDA examples
-use *betanumeric* characters (more [here]), which are from a restricted
+use *betanumeric* characters (see [more about running minters]), which are from a restricted
 character repertoire consisting of digits and lowercase letters minus vowels
 and minus the letter ‘l’ (ell). The Noid software uses this repertoire to
 reduce the chance of “accidental” semantics in generated identifiers and to
@@ -263,6 +263,6 @@ such as ‘1’ for ‘l’ and ‘0’ for ‘O’.
 
 [https://n2t.net]: https://n2t.net/
 [Noid]: {{ site.baseurl }}/resources/noid
-[here]: about-running-minters-and-resolvers.md
+[more about running minters]: about-running-minters-and-resolvers.md
 
 {% include content/section.html do="end" %}

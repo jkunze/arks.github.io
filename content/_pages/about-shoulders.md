@@ -46,7 +46,8 @@ and can save you user-support time in the end.
 
 In fact, in-house ARK administrators always know where the shoulder ends,
 provided it was chosen using the “first-digit convention”. A *primordinal
-shoulder* is a sequence of one or more betanumeric characters (defined [here])
+shoulder* is a sequence of one or more betanumeric characters (see
+[more about running minters])
 ending in a digit. This means that the shoulder is all letters (often just
 one) after the NAAN up to and including the first digit encountered after the
 NAAN. Another advantage of primordinal shoulders is that there is an infinite
@@ -73,7 +74,7 @@ shoulder with a minter service and an API access point.
 A completely different kind of shoulder “creation” step is needed to implement
 a shoulder under one of the few shared NAANs (described under [namespaces]).
 
-[here]: about-running-minters-and-resolvers.md
+[more about running minters]: about-running-minters-and-resolvers.md
 [ezid.cdlib.org]: https://ezid.cdlib.org/
 [suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
 [ark:99152/p0]: https://n2t.net/ark:99152/p0

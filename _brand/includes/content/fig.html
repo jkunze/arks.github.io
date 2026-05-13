@@ -1,18 +1,20 @@
 {% comment %}
   Usage:
     {% include content/fig.html url="/assets/images/example.jpg" description="This is an example image." link="https://example.com" nocaption=true %}
+  If no alt text is provided, tries to use the first sentence of description.
 {% endcomment %}
 
 <figure class="arka__figure">
 
   {%- assign width = include.width | default: "100%" -%}
+  {%- assign alt = include.alt | default: include.description | split: ". " | first | append: "." -%}
   {% if include.link != nil %}
     <a href="{{ include.link }}" target="_blank" rel="noopener">
   {% endif %}
 
       <img style="display: block; max-width: {{ width }}; height: auto;"
            src="{{ site.baseurl }}{{ include.url }}"
-           alt="{{ include.description | strip_html }}" />
+           alt="{{ alt | strip_html }}" />
 
   {% if include.link != nil %}
     </a>
@@ -20,7 +22,7 @@
 
   {% if include.nocaption == nil %}
   <figcaption class="arka__caption">
-    {{ include.description | markdownify }}
+    {{ include.description | markdownify | remove: '<p>' | remove: '</p>' }}
   </figcaption>
   {% endif %}
 
